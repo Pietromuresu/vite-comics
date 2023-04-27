@@ -8,8 +8,8 @@ export default {
     }
   },
   methods:{
-    getImage(image){
-      return new URL('../assets/img/image', import.meta.url).href
+    getImage(text){
+      return new URL(`../assets/img/${text}`, import.meta.url).href
     }
   }
 }
@@ -36,13 +36,15 @@ export default {
     ul{
       display: flex;
       li{
+        @include flexMe(vertical);
         color: white;
         display: flex;
         margin: 0 20px;
         text-transform: uppercase;
         font-size: small;
         img{
-          height: 20px;
+          height: 50px;
+          margin-right: 10px;
         }
         a{
           color: white;

@@ -13,8 +13,8 @@ export default {
     }
   },
   methods:{
-    getImage(image){
-      return new URL('../assets/img/image', import.meta.url).href
+    getImage(img){
+      return new URL(`../assets/img/${img}`, import.meta.url).href
     }
   }
 }
@@ -88,7 +88,7 @@ export default {
         <ul>
           <li v-for="(link, index) in mediaLinks" :key="index">
             <a :href="link.href">
-              <img src:="getImage(link.icon)" alt="ICON">
+              <img :src="getImage(link.icon)" alt="ICON">
             </a>
           </li>
         </ul>
@@ -189,6 +189,7 @@ export default {
             font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             font-weight: bolder;
             color: $blue;
+            margin-right: 20px;
           }
 
           ul{
