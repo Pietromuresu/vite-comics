@@ -1,9 +1,12 @@
 <script>
+import { headerMenus }  from "../js/all-menus";
 export default {
   name: 'Header',
-  data(){
-    return{
 
+  data(){ 
+     
+    return{
+      headerMenus
     }
   }
 }
@@ -21,16 +24,14 @@ export default {
       <div class="headerMenu">
         <nav>
           <ul>
-            <li class="active"><a href="#">Characters</a></li>
-            <li><a href="#">comics</a></li>
-            <li><a href="#">movies</a></li>
-            <li><a href="#">tv</a></li>
-            <li><a href="#">games</a></li>
-            <li><a href="#">collectibles</a></li>
-            <li><a href="#">videos</a></li>
-            <li><a href="#">fans</a></li>
-            <li><a href="#">news</a></li>
-            <li><a href="#">shop</a></li>
+           <li
+              v-for="(link, index) in headerMenus"
+              :key="index"
+              :class="{'active' : link.isActive}">
+
+              <a href="#">{{link.text}}</a>
+           
+            </li>
           </ul>
         </nav>
       </div>
@@ -61,7 +62,6 @@ export default {
           &.active{
             border-bottom: 5px solid $blue;
           }
-         
 
           a{
             line-height: 80px;
