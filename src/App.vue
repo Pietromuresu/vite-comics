@@ -1,11 +1,15 @@
 
 <script>
- import Header from './components/_Header.vue';
+import Header from './components/_Header.vue';
+import Main from './components/_Main.vue';
+import servicesBand from './components/_ServicesBand.vue';
 export default {
   name: 'App',
 
   components:{
-    Header
+    Header,
+    Main,
+    servicesBand
   },
 data(){
   return{
@@ -17,6 +21,8 @@ data(){
 
 <template>
 <Header />
+<Main/>
+<servicesBand/>
 </template>
 
 <style lang="scss" >
