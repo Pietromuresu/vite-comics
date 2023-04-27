@@ -29,6 +29,7 @@ export default {
 <style lang="scss" scoped>
 @import '../scss/partials/variables';
   .servicesBand{
+
     @include flexMe(both);
     height: 150px;
     background-color: $blue;

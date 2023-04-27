@@ -78,6 +78,87 @@ const services =[
     text: 'dc power visa',
     href: '#'
   }
+];
+
+const DCMenu = [
+  {
+      text: 'Terms of Use',
+      href: '#',
+   },
+  {
+      text: 'Privacy Policy (New)',
+      href: '#',
+   },
+  {
+      text: 'Ad Choises',
+      href: '#',
+   },
+  {
+      text: 'Advertising',
+      href: '#',
+   },
+  {
+      text: 'Jobs',
+      href: '#',
+   },
+  {
+      text: 'Subscriptions',
+      href: '#',
+   },
+  {
+      text: 'Talent workshops',
+      href: '#',
+   },
+  {
+      text: 'CPSC Certificates',
+      href: '#',
+   },
+  {
+      text: 'Ratings',
+      href: '#',
+   },
+  {
+      text: 'Shop Help',
+      href: '#',
+   },
+  {
+      text: 'Contact Us',
+      href: '#',
+   },
+];
+
+const shopMenu = [
+  {
+    text: 'Shop DC',
+    href: '#'
+  },
+  {
+    text: 'Shop DC Collectibles',
+    href: '#'
+  },
+];
+
+const sitesMenu = [
+  {
+    text: 'DC',
+    href: '#'
+  },
+  {
+    text: 'MAD Magazine',
+    href: '#'
+  },
+  {
+    text: 'DC Kids',
+    href: '#'
+  },
+  {
+    text: 'DC Universe',
+    href: '#'
+  },
+  {
+    text: 'DC Power Visa',
+    href: '#'
+  },
 ]
 
-export {headerMenus, services}
+export {headerMenus, services, DCMenu, shopMenu, sitesMenu}
