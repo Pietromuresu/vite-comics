@@ -61,6 +61,10 @@ export default {
           &:hover,
           &.active{
             border-bottom: 5px solid $blue;
+
+            a{
+              color: $blue;
+            }
           }
 
           a{
