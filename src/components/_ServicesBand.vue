@@ -31,7 +31,7 @@ export default {
   .servicesBand{
 
     @include flexMe(both);
-    height: 150px;
+    min-height: 150px;
     background-color: $blue;
     ul{
       display: flex;
@@ -53,6 +53,18 @@ export default {
           }
         }
       }
+    }
+
+    @media screen and (max-width: 800px) {
+      ul{
+        display: block;
+        margin-top: 20px;
+
+        li{
+          margin-bottom: 30px;
+        }
+      }
+      
     }
   }
 </style>

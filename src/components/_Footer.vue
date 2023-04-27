@@ -162,7 +162,7 @@ export default {
 
     .footerBottom{
       @include flexMe(vertical);
-        height: 100px;
+        min-height: 100px;
         background:$lighter-black;
       .container{
         @include flexMe(vertical);
@@ -174,6 +174,8 @@ export default {
           color: white;
           border: 1px solid $blue;
           padding: 10px;
+          max-width: 200px;
+          margin: 0 auto;
 
           h4{
             font-weight: 800;
@@ -202,6 +204,27 @@ export default {
         }
       }
       
+      @media screen and (max-width: 800px) {
+      .container{
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+
+        .signUpBtn{
+          margin-bottom: 30px;
+        }
+        .mediaLinks{
+          display: block;
+          ul{
+            display: block;
+            li{
+              margin-top: 20px
+            }
+          }
+        }
+      }
+      
+    }
     }
 
   
