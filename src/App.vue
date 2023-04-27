@@ -15,7 +15,7 @@ export default {
   },
 data(){
   return{
-    
+
   }
 }
 }
@@ -29,7 +29,9 @@ data(){
 </template>
 
 <style lang="scss" >
-@use './scss/main.scss'
+@use './scss/main.scss';
+template{
 
+  }
 
 </style>

@@ -23,6 +23,9 @@ export default {
 
 
       <div class="headerMenu">
+        <div class="hamMenu">
+          <h1 class="displayNone"><i class="fa-solid fa-bars"></i></h1>
+        </div>
         <nav>
           <ul>
            <li
@@ -50,10 +53,16 @@ export default {
 
       display: flex;
       justify-content: space-between;
+      align-items: center;
    
       img{
         height: 80px;
       }
+
+      // .hamMenu{
+      //   display: none;
+      // }
+
       ul{
         display: flex;
         li{
@@ -77,6 +86,20 @@ export default {
         }
      }
     }
+
+    @media screen and (max-width: 900px) {
+      .hamMenu{
+        h1{
+
+          display: block;
+        }
+      }  
+      nav{
+       display: none;
+      }
+    }
+
+
   }
 
 </style>
