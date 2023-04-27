@@ -1,6 +1,6 @@
 
 <script>
-import {headerMenus, DCMenu, shopMenu, sitesMenu} from '../js/all-menus'
+import {headerMenus, DCMenu, shopMenu, sitesMenu, mediaLinks} from '../js/all-menus'
 export default {
   name: 'Footer',
   data(){
@@ -8,7 +8,13 @@ export default {
       headerMenus,
       DCMenu,
       shopMenu,
-      sitesMenu
+      sitesMenu,
+      mediaLinks
+    }
+  },
+  methods:{
+    getImage(image){
+      return new URL('../assets/img/image', import.meta.url).href
     }
   }
 }
@@ -66,12 +72,38 @@ export default {
   </div>
 
   <div class="footerBottom">
+    <div class="container">
+      
+      <div>
 
+        <div class="signUpBtn">
+          <h4>SIGN-UP NOW!</h4>
+        </div>
+
+      </div>
+
+      <div class="mediaLinks">
+
+        <h3>FOLLOW US</h3>
+        <ul>
+          <li v-for="(link, index) in mediaLinks" :key="index">
+            <a :href="link.href">
+              <img src:="getImage(link.icon)" alt="ICON">
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+
+    
   </div>
 </template>
 
 <style lang="scss" scoped>
 @import '../scss/partials/general';
+@import '../scss/partials/variables';
 
       .footerTop {
       background-image: url('../assets/img/footer-bg.jpg');
@@ -126,6 +158,49 @@ export default {
           
         }
       }
+    }
+
+    .footerBottom{
+      @include flexMe(vertical);
+        height: 100px;
+        background:$lighter-black;
+      .container{
+        @include flexMe(vertical);
+        justify-content: space-between;
+
+
+
+        .signUpBtn{
+          color: white;
+          border: 1px solid $blue;
+          padding: 10px;
+
+          h4{
+            font-weight: 800;
+          }
+        }
+        
+        .mediaLinks{
+          height: 100%;
+          @include flexMe(vertical);
+          
+
+          h3{
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-weight: bolder;
+            color: $blue;
+          }
+
+          ul{
+            display: flex;
+
+            li{
+              margin: 0 10px;
+            }
+          }
+        }
+      }
+      
     }
 
   

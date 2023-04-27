@@ -159,6 +159,29 @@ const sitesMenu = [
     text: 'DC Power Visa',
     href: '#'
   },
+];
+
+const mediaLinks = [
+  {
+    icon: 'footer-facebook.png',
+    href: '#'
+  },
+  {
+    icon: 'footer-periscope.png',
+    href: '#'
+  },
+  {
+    icon: 'footer-pinterest.png',
+    href: '#'
+  },
+  {
+    icon: 'footer-twitter.png',
+    href: '#'
+  },
+  {
+    icon: 'footer-youtube.png',
+    href: '#'
+  },
 ]
 
-export {headerMenus, services, DCMenu, shopMenu, sitesMenu}
+export {headerMenus, services, DCMenu, shopMenu, sitesMenu, mediaLinks}
