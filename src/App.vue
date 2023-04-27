@@ -11,7 +11,7 @@ data(){
 </script>
 
 <template>
-
+<h1>Ciaoo</h1>
 </template>
 
 <style lang="scss" >
