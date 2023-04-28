@@ -109,7 +109,7 @@ export default {
       background-image: url('../assets/img/footer-bg.jpg');
       background-size: cover;
       width: 100%;
-      height: 370px;
+      min-height: 370px;
       overflow: hidden;
 
       .container{
@@ -119,6 +119,7 @@ export default {
           margin-top: 30px;
           display: flex;
           width: 50%;
+          z-index: 1;
           h4{
             color: white;
             margin-bottom: 10px
@@ -144,7 +145,8 @@ export default {
           ul{
             margin:0 20px;
             li{
-              font-size: smaller;margin: 5px 0;
+              font-size: smaller;
+              margin: 5px 0;
             }
           }
         }
