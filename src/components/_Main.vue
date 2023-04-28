@@ -79,7 +79,8 @@ export default {
       padding-top: 40px;
 
       .cardContainer{
-        width: calc(100% / 6);
+        max-width: 180px;
+        
 
       }
 
@@ -104,4 +105,6 @@ export default {
     margin: 0 auto; 
     position: relative;
   }
+
+
 </style>
